@@ -142,7 +142,7 @@ body {
     padding: 221px 10px 0 0;
     max-width: 576px;
     position: absolute;
-    z-index: 2;
+    z-index: 49;
 }
 .main-block__title {
     font-size: 57px;
@@ -172,11 +172,37 @@ body {
     line-height: 115%;
     padding: 12px 47px;
 }
-.main-block__image {
+.main-block__image-absolute {
     /* flex: 0 1 auto; */
     padding: 54px 0 0 0;
     position: absolute;
     right: 0;
+}
+.main-block__image {
+    position: relative;
+}
+.main-block__popup {
+    background: url(img/round-close.png) center no-repeat;
+    width: 89.42px;
+    height: 89.42px;
+    position: absolute;
+    z-index: 3;
+    transition: .55s ease;
+}
+.main-block__popup:hover {
+    background: url(img/round-open.png) center no-repeat;
+}
+.main-popup-1 {
+    top: 220px;
+    left: 196px;
+}
+.main-popup-2 {
+    top: 412px;
+    left: 77px;
+}
+.main-popup-3 {
+    top: 509px;
+    right: 331px;
 }
 /*================================FOOTER================================*/
 .footer {
