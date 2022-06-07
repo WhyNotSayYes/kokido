@@ -249,6 +249,140 @@ body {
     margin: 113px 0 0 0;
     text-align: center;
 }
+
+/*----.page__slider---*/
+.page__slider {
+}
+.slider__container {
+    margin: 83px 0 48.5px 54px;
+}
+.slick-list {
+	overflow: hidden;
+}
+.slick-track{
+	display: flex;
+}
+.slider {
+	display: flex;
+	max-width: 1366px;
+	height: 100%;
+}
+.slider-big {
+	position: relative;
+	padding: 0 10px;
+	flex: 0 1 50%;
+	width: 25%;
+	height: 25%;
+}
+
+.slider-right {
+	flex: 0 1 50%;
+	width: 25%;
+	height: 25%;
+	display: flex;
+	flex-direction: column;
+}
+.slider-big__item {
+}
+.slider-text {
+	position: relative;
+	padding: 0 10px;
+	flex: 0 1 50%;
+}
+.slider-text:not(:last-child) {
+    margin: 0 0 66px 0;
+}
+.slider-text__item {
+}
+.slider-text .slick-dots li {
+	margin: 0 10px;
+}
+.slider-text__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 115%;
+    text-align: center;
+}
+.slider-text__title:not(:last-child) {
+    margin: 0 0 60px 0;
+}
+.slider-text__content {
+    display: flex;
+}
+.slider-text__col-1 {
+    flex: 0 1 76.7%;
+    padding: 0 0 0 20px;
+}
+.slider-text__list {
+    font-size: 20px;
+    line-height: 115%;
+}
+.slider-text__list:not(:last-child) {
+    padding: 0 0 21px 0;
+}
+.list-1 {
+    position: relative;
+}
+.slider-text__col-2 {
+    flex: 0 1 auto;
+}
+.list-2 {
+    text-align: right;
+}
+.slider-min {
+	position: relative;
+	flex: 0 1 50%;
+}
+.slider-min .slick-list {
+	overflow: hidden;
+}
+.slider-min .slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	font-size: 0;
+	margin: -30px 0 0 0;
+}
+.slider-min .slick-arrow.slick-prev {
+	background: url(img/left.svg) 0 0 / 100% no-repeat;
+    left: 0;
+    width: 28px;
+    height: 28px;
+}
+.slider-min .slick-arrow.slick-next {
+	background: url(img/right.svg) 0 0 / 100% no-repeat;
+    right: 0;
+    width: 28px;
+    height: 28px;
+}
+.slider-min .slick-slide {
+	text-align: center;
+	opacity: 0.5;
+	transition: .5s ease;
+}
+.slider-min .slick-slide.slick-center {
+	opacity: 1;
+}
+.slider-min .slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider-min .slick-dots li {
+	margin: 0 10px;
+}
+.slider-min .slick-dots li button {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: rgb(119, 119, 119);
+}
+.slider-min .slick-dots li.slick-active button {
+	background: rgb(71, 71, 71);
+}
+.slider-min__item {
+}
 /*================================FOOTER================================*/
 .footer {
 }
