@@ -26,5 +26,6 @@ $(document).ready(function(){
         asNavFor: '.slider-big,.slider-text',
         autoplay: false,
         autoplaySpeed: 1500,
+        variableWidth: true,
     });
 })

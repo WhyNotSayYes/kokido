@@ -242,7 +242,7 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-delay: 5s;
+    animation-delay: 6s;
     opacity: .5;
 }
 @keyframes animated-circle {
@@ -358,6 +358,8 @@ body {
 .slider-min {
 	position: relative;
 	flex: 0 1 50%;
+    max-width: 611px;
+    margin: 0 auto;
 }
 .slider-min .slick-list {
 	overflow: hidden;
@@ -398,16 +400,70 @@ body {
 	margin: 0 10px;
 }
 .slider-min .slick-dots li button {
+    margin: 31px 0 0 0;
 	font-size: 0;
-	width: 10px;
-	height: 10px;
+	width: 13px;
+	height: 13px;
 	border-radius: 50%;
-	background: rgb(119, 119, 119);
+	background: linear-gradient(139.24deg, rgba(116, 141, 146, 0.5) 15.97%, rgba(133, 145, 147, 0.5) 83.84%);
 }
 .slider-min .slick-dots li.slick-active button {
-	background: rgb(71, 71, 71);
+	background: linear-gradient(139.24deg, #979797 15.97%, #787878 83.84%);
 }
 .slider-min__item {
+    background: #FFFEFE;
+    padding: 0 27.5px;
+}
+.item-border {
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-border img {
+    padding: 7px 20px 24px 13px;
+}
+.slider-min__title {
+    background: linear-gradient(93.3deg, #11B1CE 0%, #1EC7E6 100%);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 118.75%;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 11px 0 12px 0;
+}
+
+
+/*----.page__video-block---*/
+.page__video-block {
+}
+.video-block {
+}
+.video-block__content {
+    background: linear-gradient(82.46deg, #19B9D1 25.3%, rgba(4, 175, 203, 0.45) 56.77%, rgba(255, 255, 255, 0) 88.01%);
+}
+.video-block__title {
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 116.667%;
+    color: #FFFFFF;
+    max-width: 817px;
+    padding: 185px 0 31px 107px;
+}
+.video-block__subtitle {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 118.18%;
+    color: #FFFFFF;
+    max-width: 729px;
+    padding: 0 0 214px 107px;
+}
+.buttonBar {/*таймер видеофона*/
+    font-size: 0; 
 }
 /*================================FOOTER================================*/
 .footer {
