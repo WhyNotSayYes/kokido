@@ -312,8 +312,9 @@ body {
 }
 .slider-text {
 	position: relative;
-	padding: 0 10px;
+	/* padding: 0 10px; */
 	flex: 0 1 50%;
+    width: 100%;
 }
 .slider-text:not(:last-child) {
     margin: 0 0 66px 0;
@@ -334,21 +335,23 @@ body {
 }
 .slider-text__content {
     display: flex;
+    justify-content: space-between;
 }
 .slider-text__col-1 {
     flex: 0 1 76.7%;
-    padding: 0 0 0 20px;
+    /* padding: 0 0 0 20px; */
 }
 .slider-text__list {
     font-size: 20px;
     line-height: 115%;
+    margin-left: 10px;
 }
 .slider-text__list:not(:last-child) {
     padding: 0 0 21px 0;
 }
 .list-1 {
-    position: relative;
 }
+
 .slider-text__col-2 {
     flex: 0 1 auto;
 }
@@ -442,6 +445,7 @@ body {
 .page__video-block {
 }
 .video-block {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .video-block__content {
     background: linear-gradient(82.46deg, #19B9D1 25.3%, rgba(4, 175, 203, 0.45) 56.77%, rgba(255, 255, 255, 0) 88.01%);
@@ -451,7 +455,7 @@ body {
     font-size: 42px;
     line-height: 116.667%;
     color: #FFFFFF;
-    max-width: 817px;
+    max-width: 823px;
     padding: 185px 0 31px 107px;
 }
 .video-block__subtitle {
@@ -464,6 +468,70 @@ body {
 }
 .buttonBar {/*таймер видеофона*/
     font-size: 0; 
+}
+
+/*----.page__about-us----*/
+.page__about-us {
+}
+.about-us {
+}
+.about-us__container {
+}
+.about-us__text-block {
+    margin: 107px 0 96px 0;
+}
+h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 116.667%;
+    text-align: center;
+}
+.about-us__title {
+}
+.about-us__text {
+    font-size: 22px;
+    line-height: 127.27%;
+    max-width: 933px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 19px;
+}
+.about-us__text span {
+    font-weight: 600;
+}
+.about-us__text sup {
+    font-size: 10px;
+    font-weight: 900;
+}
+.about-us__items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 126px 0;
+}
+.about-us__item {
+    /* flex: 0 1 33.33%; */
+    max-width: 305px;
+}
+.item-about-1 {
+}
+.about-us__item-head {
+    display: flex;
+    align-items: center;
+}
+.about-us__item-icon {
+}
+.about-us__item-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 115%;
+    padding-left: 23px;
+}
+.about-us__item-text {
+    line-height: 116.667%;
+}
+.item-about-2 {
+}
+.item-about-3 {
 }
 /*================================FOOTER================================*/
 .footer {

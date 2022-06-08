@@ -16,6 +16,7 @@ $(document).ready(function(){
         dots: false,
         draggable: false,
         swipe: false,
+        // variableWidth: true,
     });
     $('.slider-min').slick({
         arrows: true,
