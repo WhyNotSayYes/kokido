@@ -29,4 +29,13 @@ $(document).ready(function(){
         autoplaySpeed: 1500,
         variableWidth: true,
     });
+    $('.slider-rev').slick({
+        arrows: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        centerMode: true,
+    })
 })
