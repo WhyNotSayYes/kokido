@@ -842,4 +842,43 @@ h3 {
 }
 /*================================FOOTER================================*/
 .footer {
+    background: linear-gradient(90.65deg, #0CB1CC 0%, #0CB1CC 41.79%, #4ACAD7 101.44%);
+}
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 86px 0 90px 0;
+}
+.footer__connect {
+}
+.footer__connect_text {
+    margin: 8px 0 19px 0;
+}
+.footer__connect_text,
+.footer__list {
+    font-size: 16px;
+    line-height: 118.75%;
+}
+.footer__social {
+    display: flex;
+}
+.footer__social_item:not(:last-child) {
+    margin-right: 15.18px;
+}
+.footer__info-1 {
+}
+.footer__item {
+    margin: 0 0 19px 0;
+}
+.footer__item:first-child {
+    margin-top: 8px;
+}
+.footer__link {
+}
+.footer__logo {
+}
+.footer__info-2 {
+}
+.footer__politics {
 }
