@@ -33,9 +33,10 @@ $(document).ready(function(){
         arrows: true,
         slidesToShow: 2,
         slidesToScroll: 1,
+        initialSlide: 1,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 6000,
         centerMode: true,
     })
 })
