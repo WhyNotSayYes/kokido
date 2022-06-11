@@ -25,22 +25,30 @@ document.addEventListener("click", function(e) {
 
   //
   $(".main-block__popup").click(function(){
-    $(this).toggleClass("active")  ; 
-   })
+    $(this).toggleClass("active"); 
+   });
 
-  //
-  // let animate = function() {
-  //   $(".main-block__popup").animate({
-  //       transform: "scale(1)"
-  //     }, 1000).animate({
-  //       transform: "scale(1.2)"
-  //     }, 1000);
-  // };
-  // animate();
-  // window.intervalId = setInterval(animate, 2000);
+   $(document).on('mouseup', function(e){ 
+    let s = $('.main-block__popup.active');
+    if(!s.is(e.target) && s.has(e.target).length === 0) {
+      s.removeClass('active');
+    }
+  });
   
-  // $('.main-block__popup').on('click', function(){
-  //     $(".main-block__popup").finish(true, false);
-  //     clearInterval(window.intervalId);
-  // });
+
+  
+  let animate = function() {
+    $(".main-block__popup").animate({
+        opacity: ".1"
+      }, 2000).animate({
+        opacity: "1"
+      }, 2000);
+  };
+  animate();
+  window.intervalId = setInterval(animate, 2000);
+  
+  $('.tumbler').on('click', function(){
+      $(".main-block__popup").finish();
+      clearInterval(window.intervalId);
+  });
 
