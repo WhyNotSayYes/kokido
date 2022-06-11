@@ -182,15 +182,47 @@ body {
     line-height: 115%;
     padding: 12px 47px;
     height: 48px;
-    transition: .35s ease;
+
     position: relative;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 2;
 }
+
+.main-block__button:after {
+    content: '';
+    width: 258px; 
+    height: 48px;
+    border-radius: 25px;
+    /* border: 2px solid #04AFCB; */
+    background: linear-gradient(92.05deg, #67d2e2 3.73%, #7dd8e6 67.6%, #b5f5fd 100%);;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: drop 3s infinite;
+}
+
 
 .main-block__button:hover {
     filter: drop-shadow(0px 6px 25px rgba(44, 153, 177, 0.77));
     border: 1px solid #04AFCB;
     background: #fff;
     color: #04AFCB;
+}
+
+@keyframes drop {
+    0% {
+        width: 258px;
+        height: 48px;
+        opacity: .5;
+      }
+      100% {
+        width: 358px;
+        height: 148px;
+        opacity: 0;
+        border-radius: 125px;
+      }
 }
 .main-block__image {
     flex: 0 1 auto; 
@@ -901,6 +933,62 @@ h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
+
+    position: relative;
+    transition: all 0.2s linear 0s;
+}
+
+.button-subscribe:after {
+    content: '';
+    width: 259px; 
+    height: 48px;
+    border-radius: 5px;
+    border: 2px solid #04AFCB;
+    background: linear-gradient(92.05deg, #67d2e2 3.73%, #7dd8e6 67.6%, #b5f5fd 100%);;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: drop-2 3s infinite;
+}
+
+.button-subscribe:before {
+    content: "→";
+    font-size: 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 40px;
+    transition: all 0.2s linear 0s;
+}
+
+.button-subscribe:hover:before {
+    opacity: 1;
+    text-indent: -20px;
+}
+
+.button-subscribe:hover{
+    text-indent: -20px;
+}
+
+@keyframes drop-2 {
+    0% {
+        width: 259px;
+        height: 48px;
+        opacity: .5;
+      }
+      100% {
+        width: 309px;
+        height: 98px;
+        opacity: 0;
+        border-radius: 5px;
+      }
 }
 .subscribe__image_img {
     position: absolute;
