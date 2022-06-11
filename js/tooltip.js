@@ -29,18 +29,18 @@ document.addEventListener("click", function(e) {
    })
 
   //
-  let animate = function() {
-    $(".main-block__popup").animate({
-        transform: "scale(1)"
-      }, 1000).animate({
-        transform: "scale(1.2)"
-      }, 1000);
-  };
-  animate();
-  window.intervalId = setInterval(animate, 2000);
+  // let animate = function() {
+  //   $(".main-block__popup").animate({
+  //       transform: "scale(1)"
+  //     }, 1000).animate({
+  //       transform: "scale(1.2)"
+  //     }, 1000);
+  // };
+  // animate();
+  // window.intervalId = setInterval(animate, 2000);
   
-  $('.main-block__popup').on('click', function(){
-      $(".main-block__popup").finish(true, false);
-      clearInterval(window.intervalId);
-  });
+  // $('.main-block__popup').on('click', function(){
+  //     $(".main-block__popup").finish(true, false);
+  //     clearInterval(window.intervalId);
+  // });
 
