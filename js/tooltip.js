@@ -1,6 +1,3 @@
-// $(".tooltip__img").on("click", function() {
-//     $(".tooltip__item").toggle();
-//   });
 document.addEventListener("click", function(e) {
     let m = document.getElementById('tooltip__item_1');
     if (e.target.id != 'tooltip__img_1' && e.target.id != 'tooltip__item_1') {
@@ -26,18 +23,24 @@ document.addEventListener("click", function(e) {
     }
   });
 
-  let arr = ['round-open.png', 'round-close.png'],
-    block = document.querySelector('.main-block__popup'),
-    i = 0;
-    block.onclick = boom;
+  //
+  $(".main-block__popup").click(function(){
+    $(this).toggleClass("active")  ; 
+   })
 
-    function boom() {
-        block.style.backgroundImage = 'url(img/'+arr[i]+')';
-        i++;
-
-        if (i == arr.length) {
-            i = 0;
-        }
-    };
-
+  //
+  let animate = function() {
+    $(".main-block__popup").animate({
+        transform: "scale(1)"
+      }, 1000).animate({
+        transform: "scale(1.2)"
+      }, 1000);
+  };
+  animate();
+  window.intervalId = setInterval(animate, 2000);
+  
+  $('.main-block__popup').on('click', function(){
+      $(".main-block__popup").finish(true, false);
+      clearInterval(window.intervalId);
+  });
 
