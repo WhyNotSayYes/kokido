@@ -37,6 +37,7 @@ body {
     line-height: 1;
     background: #fff;
     color: #000000;
+    zoom: 90%;
 }
 .wrapper {
     min-height: 100%;
@@ -50,6 +51,11 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+/* ._container {
+    max-width: 1600px; 1412px + 30px для отступов безопасности = 1442px
+    padding: 0 15px;
+    margin: 0 auto;
+} */
 ._ibg {
     position: relative;
 }
@@ -369,9 +375,10 @@ body {
 .page__slider {
     position: relative;
     padding: 0 15px;
+    margin: 0 auto;
 }
 .slider__container {
-    margin: 83px 0 0 54px;
+    margin: 83px auto 0 auto;
     padding: 0 0 48.5px 0;
 }
 .slider__gradient {
