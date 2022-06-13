@@ -25,9 +25,17 @@ $(document).ready(function(){
         dots: true,
         centerMode: true,
         asNavFor: '.slider-big,.slider-text',
-        autoplay: false,
-        autoplaySpeed: 1500,
         variableWidth: true,
+        draggable: true,
+        swipe: true,
+        responsive: [
+            {
+              breakpoint: 470,
+              settings: {
+                arrows: false,
+              },
+            },
+          ],
     });
     $('.slider-rev').slick({
         arrows: true,
