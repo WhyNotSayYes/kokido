@@ -52,5 +52,13 @@ $(document).ready(function(){
         slidesToScroll: 1,
         dots: true,
         arrows: false,
+    });
+    $('.partners__slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
     })
 })
