@@ -46,5 +46,11 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 6000,
         centerMode: true,
+    });
+    $('.faq-spollers-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
     })
 })
