@@ -499,7 +499,15 @@ body {
     margin: 113px 0 0 0;
     text-align: center;
 }
-
+ @media (max-width: 590px) {
+    .advantage__text {
+        margin: 38px auto 0 auto;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        padding: 25px 0px;
+    }
+ }
 /*----.page__slider---*/
 .page__slider {
     position: relative;
@@ -844,6 +852,36 @@ body {
 }
 .buttonBar {/*таймер видеофона*/
     font-size: 0; 
+}
+@media (max-width: 800px) {
+    .video-block__title {
+        padding: 107px 0 31px 72px;
+    }
+    .video-block__subtitle {
+        padding: 0 0 214px 72px;
+    }
+}
+@media (max-width: 588px) {
+    .video-block__title {
+        /* font-weight: 600; */
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        padding: 27px 78px 186px 25px;
+    }
+    .video-block__subtitle {
+        display: none;
+    }
+}
+@media (max-width: 360px) {
+    .video-block__title {
+        max-width: 85%;
+    }
+}
+@media (max-width: 320px) {
+    .video-block__title {
+        max-width: 100%;
+    }
 }
 
 /*----.page__about-us----*/
