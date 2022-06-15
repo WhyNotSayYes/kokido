@@ -43,9 +43,19 @@ $(document).ready(function(){
         slidesToScroll: 1,
         initialSlide: 1,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 6000,
         centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1050,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                }
+            }
+        ]
     });
     $('.faq-spollers-slider').slick({
         slidesToShow: 1,
