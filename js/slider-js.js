@@ -18,9 +18,10 @@ $(document).ready(function(){
         swipe: false,
         // variableWidth: true,
     });
+    
     $('.slider-min').slick({
         arrows: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         dots: true,
         centerMode: true,
@@ -71,4 +72,5 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 3000,
     })
-})
+});
+
